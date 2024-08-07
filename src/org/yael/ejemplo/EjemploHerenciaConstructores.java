@@ -27,18 +27,13 @@ public class EjemploHerenciaConstructores {
     }
 
     public static void imprimir( Persona persona ){
-        System.out.print(
-                persona.getNombre() + " " + persona.getApellido() + " " + persona.getEdad()
-        );
+        System.out.print(persona.saludar());
 
         if( persona instanceof Alumno ){
-            double promedio = (((Alumno) persona).getNotaMatematica() // casteo para pasarlo a Alumno
-                    + ((Alumno) persona).getNotaCastellano()
-                    + ((Alumno) persona).getNotaHistoria()) / 3;
-
-            System.out.println(": Calificacion promedio del alumno: " + (int)promedio);
+            double promedio = ((Alumno) persona).calcularPromedio();
+            System.out.println("  ===== Calificacion promedio del alumno: " + promedio);
         } else {
-            System.out.println();
+            System.out.println(".");
         }
     }
 }

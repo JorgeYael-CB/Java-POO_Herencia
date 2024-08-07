@@ -70,4 +70,14 @@ public class Alumno extends Persona{ // herencia
     public void setNotaHistoria(double notaHistoria) {
         this.notaHistoria = notaHistoria;
     }
+
+    @Override
+    public String saludar(){ // sobre escritura de metodos en Herencia
+        return super.saludar() + " soy un alumno y mi nombre es: " + this.getNombre(); // concatenando el primer saludo.
+    }
+
+    public double calcularPromedio(){
+        return (this.notaCastellano + this.notaCastellano + this.notaMatematica) / 3;
+    }
+
 }
