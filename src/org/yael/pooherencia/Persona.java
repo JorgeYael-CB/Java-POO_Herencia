@@ -9,7 +9,7 @@ public class Persona {
 
 
     public Persona(){
-        System.out.println("persona: Inicializando constructor");
+        System.out.println("persona: Inicializando constructor vacio");
     }
 
     public Persona(String nombre, String apellido){

@@ -7,7 +7,7 @@ public class Alumno extends Persona{ // herencia
     private double notaHistoria;
 
     public Alumno(){
-        System.out.println("Alumno: Inicializando constructor");
+        System.out.println("Alumno: Inicializando constructor vacio");
     }
 
     public Alumno(String nombre, String apellido){

@@ -5,7 +5,16 @@ public class AlumnoInternacional extends Alumno {
     private double notaIdiomas;
 
     public AlumnoInternacional(){
-        System.out.println("AlumnoInt: Inicializando constructor");
+        System.out.println("AlumnoInt: Inicializando constructor vacio");
+    }
+
+    public AlumnoInternacional(String nombre, String apellido){
+        super(nombre, apellido);
+    }
+
+    public AlumnoInternacional(String nombre, String apellido, String pais){
+        super(nombre, apellido);
+        this.pais = pais;
     }
 
     public String getPais() {
